@@ -1,0 +1,760 @@
+================================================================================
+GLASS version 0.1  Tue Nov 27 00:38:39 2018
+================================================================================
+================================================================================
+PIXEL BASIS for SW05
+================================================================================
+rmin=3.343992822958805 rmax=5.458801058840669 L=12
+Pixel basis
+    Pixel radius         = 12
+    Map radius           = 5.9551 [arcsec] Distance to center of outer pixel.
+    Map Extent           = 6.2032 [arcsec] Distance to outer edge of outer pixel.
+    top_level_cell_size  = 0.4963 [arcsec]
+    Map radius           = 39.7640 [kpc]    H0inv=13.6
+    Map Extent           = 41.4208 [kpc]    H0inv=13.6
+    top_level_cell       = 3.3137 [kpc]    H0inv=13.6
+    Number of rings      = 14
+    Number of pixels     = 497
+    Number of variables  = 502
+    Central pixel offset = 0
+Offsets        Start    End
+    pix            1    498
+    srcpos       498    500
+    H0             0
+    shear        500    502
+================================================================================
+COSMOLOGY
+================================================================================
+Omega Matter = 0.28                                                             
+Omega Lambda = 0.72                                                             
+H0inv        = (13.7, 13.7)                                                [Gyr]
+H0           = (71.37, 71.37)                                         [km/s/Mpc]
+H0inv ref    = 13.57                                                       [Gyr]
+filled_beam  = True                                                             
+
+================================================================================
+OBJECTS
+================================================================================
+1. SW05 at z=0.6252  Distance(Obs->Lens) = 0.3309                               
+    Map radius       = Not specified                                            
+    Critical density = 1.2072e+09 (H0inv=13.6)                      [Msun/kpc^2]
+
+    Source at z=2.6000 
+        Distance (Obs->Src)  = 0.3929                                   [arcsec]
+        Distance (Lens->Src) = 0.2435                                   [arcsec]
+        Dos/Dls              = 1.6134                                           
+        Image at ( 1.347, 5.290) : |*|= 5.459 angle=  75.714 parity=min 
+        Image at (-4.249,-2.300) : |*|= 4.832 angle=-151.573 parity=min 
+        Image at (-4.680,-0.238) : |*|= 4.686 angle=-177.089 parity=sad 
+        Image at ( 2.472,-2.252) : |*|= 3.344 angle= -42.334 parity=sad 
+
+================================================================================
+MISCELLANEOUS
+================================================================================
+Graphics enabled
+
+================================================================================
+SYSTEM
+================================================================================
+Number of CPUs detected = 4
+Number of CPUs used     = 1
+OpenMP not supported.
+
+Number of variables (nvars) = 254
+================================================================================
+PIXEL BASIS MODEL GENERATOR
+================================================================================
+Priors:
+           lens_eq
+           time_delay
+           hubble_constant
+[EXCLUDED] J1parity
+[EXCLUDED] L1parity
+           magnification
+[EXCLUDED] annular_density
+           external_shear
+[EXCLUDED] external_mass
+[EXCLUDED] profile_steepness2
+           profile_steepness
+[EXCLUDED] profile_steepnessXXX
+[EXCLUDED] PLprofile_steepness
+[EXCLUDED] gradient
+[EXCLUDED] Pgradient
+[EXCLUDED] J2gradient
+           J3gradient
+[EXCLUDED] J4gradient
+[EXCLUDED] central_pixel_as_maximum
+[EXCLUDED] central_pixel_max
+[EXCLUDED] central_pixel_min
+[EXCLUDED] ring_smoothness
+[EXCLUDED] PLsmoothness
+[EXCLUDED] PLsmoothness2
+           PLsmoothness3
+[EXCLUDED] PLsmoothnessExp
+[EXCLUDED] pixel_smoothness
+[EXCLUDED] JCsmoothness
+[EXCLUDED] smoothness
+           shared_h
+[EXCLUDED] max_kappa
+[EXCLUDED] min_kappa
+[EXCLUDED] min_annular_density
+[EXCLUDED] min_kappa_model
+[EXCLUDED] smoothness2
+[EXCLUDED] max_kappa
+[EXCLUDED] smooth_symmetry
+[EXCLUDED] extended_source_size
+[EXCLUDED] source_position_quadrant
+[EXCLUDED] source_position
+[EXCLUDED] link_sources
+Applying Priors:
+array offset 1
+           Lens Equation
+                      Source 0,Image 0: (  1.3470,   5.2900)
+                      Source 0,Image 1: ( -4.2490,  -2.3000)
+                      Source 0,Image 2: ( -4.6800,  -0.2380)
+                      Source 0,Image 3: (  2.4720,  -2.2520)
+           Time Delay
+           Profile Steepness [0, None]
+                      # eqs = 13
+           J3Gradient (theta=45.00  size=None)
+Finding neighbors 3...
+                      gradient eqs = 992
+                      sn=0.707107
+           Magnification
+           Hubble Constant[3.1054927171532847 3.1054927171532847]
+           Lower/Upper bound: 3.10549271715 3.10549271715
+           PLSmoothness3 (factor=2.0 include_central_pixel=False)
+Finding neighbors...
+                      # eqs = 496
+           External Shear
+[DISABLED] Shared h
+================================================================================
+Simplex Random Walk
+================================================================================
+    1541 equations
+    >=     <=      =
+     0   1532      9
+Using lpsolve glpk 4.47
+random seed = 0
+threads = 1
+acceptence rate = 0.25
+acceptence rate tolerance = 0.15
+dof = 245
+sample distance = max(100,1 * 245^2) = 60025
+starting twiddle = 2.4
+burn-in length = 2450
+Finding first inner point
+Estimating eigenvectors
+Getting solutions
+Thread 0 gets 200
+                                       STARTING rwalk_burnin THREAD 0
+                                     B THREAD   0]  9/2450  25.6% accepted  ( 15392/ 44633 Acc/Rej)  twiddle 36.94  time 0.196s
+                                     B THREAD   0]  25/2450  22.8% accepted  ( 13658/ 46367 Acc/Rej)  twiddle 39.24  time 0.192s
+                                     B THREAD   0]  41/2450  25.3% accepted  ( 15177/ 44848 Acc/Rej)  twiddle 40.27  time 0.192s
+                                     B THREAD   0]  57/2450  24.1% accepted  ( 14480/ 45545 Acc/Rej)  twiddle 40.27  time 0.184s
+                                     B THREAD   0]  73/2450  24.6% accepted  ( 14770/ 45255 Acc/Rej)  twiddle 38.85  time 0.196s
+                                     B THREAD   0]  89/2450  26.7% accepted  ( 16032/ 43993 Acc/Rej)  twiddle 37.46  time 0.198s
+                                     B THREAD   0]  105/2450  25.4% accepted  ( 15240/ 44785 Acc/Rej)  twiddle 38.78  time 0.195s
+                                     B THREAD   0]  121/2450  25.7% accepted  ( 15417/ 44608 Acc/Rej)  twiddle 38.93  time 0.195s
+                                     B THREAD   0]  137/2450  25.8% accepted  ( 15494/ 44531 Acc/Rej)  twiddle 38.93  time 0.198s
+                                     B THREAD   0]  153/2450  24.7% accepted  ( 14839/ 45186 Acc/Rej)  twiddle 38.93  time 0.194s
+                                     B THREAD   0]  168/2450  24.0% accepted  ( 14428/ 45597 Acc/Rej)  twiddle 39.26  time 0.191s
+                                     B THREAD   0]  184/2450  25.2% accepted  ( 15148/ 44877 Acc/Rej)  twiddle 35.73  time 0.196s
+                                     B THREAD   0]  199/2450  26.4% accepted  ( 15876/ 44149 Acc/Rej)  twiddle 37.22  time 0.196s
+                                     B THREAD   0]  215/2450  24.7% accepted  ( 14804/ 45221 Acc/Rej)  twiddle 37.50  time 0.188s
+                                     B THREAD   0]  231/2450  24.2% accepted  ( 14548/ 45477 Acc/Rej)  twiddle 36.67  time 0.185s
+                                     B THREAD   0]  247/2450  23.5% accepted  ( 14081/ 45944 Acc/Rej)  twiddle 36.67  time 0.185s
+                                     B THREAD   0]  263/2450  24.4% accepted  ( 14646/ 45379 Acc/Rej)  twiddle 35.81  time 0.198s
+                                     B THREAD   0]  278/2450  25.1% accepted  ( 15078/ 44947 Acc/Rej)  twiddle 36.80  time 0.200s
+                                     B THREAD   0]  293/2450  26.9% accepted  ( 16154/ 43871 Acc/Rej)  twiddle 38.21  time 0.204s
+                                     B THREAD   0]  309/2450  23.5% accepted  ( 14082/ 45943 Acc/Rej)  twiddle 38.76  time 0.190s
+                                     B THREAD   0]  325/2450  24.8% accepted  ( 14869/ 45156 Acc/Rej)  twiddle 38.52  time 0.198s
+                                     B THREAD   0]  341/2450  25.6% accepted  ( 15350/ 44675 Acc/Rej)  twiddle 38.08  time 0.197s
+                                     B THREAD   0]  357/2450  25.8% accepted  ( 15483/ 44542 Acc/Rej)  twiddle 39.06  time 0.194s
+                                     B THREAD   0]  373/2450  23.8% accepted  ( 14266/ 45759 Acc/Rej)  twiddle 41.60  time 0.191s
+                                     B THREAD   0]  389/2450  22.9% accepted  ( 13723/ 46302 Acc/Rej)  twiddle 38.72  time 0.189s
+                                     B THREAD   0]  405/2450  27.8% accepted  ( 16663/ 43362 Acc/Rej)  twiddle 37.97  time 0.206s
+                                     B THREAD   0]  420/2450  26.3% accepted  ( 15762/ 44263 Acc/Rej)  twiddle 36.72  time 0.199s
+                                     B THREAD   0]  435/2450  25.9% accepted  ( 15550/ 44475 Acc/Rej)  twiddle 37.74  time 0.197s
+                                     B THREAD   0]  451/2450  23.3% accepted  ( 13969/ 46056 Acc/Rej)  twiddle 38.43  time 0.186s
+                                     B THREAD   0]  466/2450  27.0% accepted  ( 16231/ 43794 Acc/Rej)  twiddle 38.64  time 0.200s
+                                     B THREAD   0]  482/2450  27.4% accepted  ( 16448/ 43577 Acc/Rej)  twiddle 37.29  time 0.205s
+Computing eigenvalues... [490/2450]
+average store delta 12.64636079741529
+New twiddle 36.463071
+                                    RB THREAD   0]  490/2450   7.6% accepted  (  4578/ 55447 Acc/Rej)  twiddle  7.92  time 0.053s
+                                     B THREAD   0]  506/2450  25.0% accepted  ( 15014/ 45011 Acc/Rej)  twiddle  3.34  time 0.190s
+                                     B THREAD   0]  522/2450  22.9% accepted  ( 13724/ 46301 Acc/Rej)  twiddle  3.34  time 0.183s
+                                     B THREAD   0]  538/2450  23.5% accepted  ( 14081/ 45944 Acc/Rej)  twiddle  3.34  time 0.193s
+                                     B THREAD   0]  554/2450  24.3% accepted  ( 14574/ 45451 Acc/Rej)  twiddle  3.34  time 0.187s
+                                     B THREAD   0]  570/2450  25.1% accepted  ( 15043/ 44982 Acc/Rej)  twiddle  3.06  time 0.191s
+                                     B THREAD   0]  586/2450  25.3% accepted  ( 15175/ 44850 Acc/Rej)  twiddle  3.20  time 0.193s
+                                     B THREAD   0]  602/2450  21.8% accepted  ( 13102/ 46923 Acc/Rej)  twiddle  3.20  time 0.181s
+                                     B THREAD   0]  618/2450  24.3% accepted  ( 14578/ 45447 Acc/Rej)  twiddle  3.20  time 0.186s
+                                     B THREAD   0]  634/2450  24.9% accepted  ( 14974/ 45051 Acc/Rej)  twiddle  3.28  time 0.196s
+                                     B THREAD   0]  650/2450  22.7% accepted  ( 13622/ 46403 Acc/Rej)  twiddle  3.22  time 0.181s
+                                     B THREAD   0]  666/2450  24.0% accepted  ( 14390/ 45635 Acc/Rej)  twiddle  3.12  time 0.191s
+                                     B THREAD   0]  682/2450  25.3% accepted  ( 15181/ 44844 Acc/Rej)  twiddle  3.14  time 0.194s
+                                     B THREAD   0]  698/2450  24.7% accepted  ( 14843/ 45182 Acc/Rej)  twiddle  3.26  time 0.186s
+                                     B THREAD   0]  714/2450  26.1% accepted  ( 15653/ 44372 Acc/Rej)  twiddle  3.17  time 0.202s
+                                     B THREAD   0]  730/2450  25.7% accepted  ( 15453/ 44572 Acc/Rej)  twiddle  3.08  time 0.190s
+Computing eigenvalues... [736/2450]
+average store delta 3.796208815662868
+New twiddle 3.246167
+                                     B THREAD   0]  738/2450  24.7% accepted  ( 14845/ 45180 Acc/Rej)  twiddle  3.25  time 0.185s
+                                     B THREAD   0]  754/2450  23.6% accepted  ( 14178/ 45847 Acc/Rej)  twiddle  3.28  time 0.183s
+                                     B THREAD   0]  770/2450  23.1% accepted  ( 13869/ 46156 Acc/Rej)  twiddle  3.25  time 0.181s
+                                     B THREAD   0]  786/2450  22.6% accepted  ( 13574/ 46451 Acc/Rej)  twiddle  3.25  time 0.183s
+                                     B THREAD   0]  802/2450  24.4% accepted  ( 14648/ 45377 Acc/Rej)  twiddle  3.25  time 0.185s
+                                     B THREAD   0]  818/2450  26.2% accepted  ( 15713/ 44312 Acc/Rej)  twiddle  3.25  time 0.188s
+                                     B THREAD   0]  834/2450  24.7% accepted  ( 14829/ 45196 Acc/Rej)  twiddle  3.19  time 0.183s
+                                     B THREAD   0]  850/2450  23.2% accepted  ( 13954/ 46071 Acc/Rej)  twiddle  3.15  time 0.181s
+                                     B THREAD   0]  866/2450  26.6% accepted  ( 15944/ 44081 Acc/Rej)  twiddle  3.04  time 0.189s
+                                     B THREAD   0]  882/2450  24.8% accepted  ( 14877/ 45148 Acc/Rej)  twiddle  3.06  time 0.184s
+                                     B THREAD   0]  898/2450  27.9% accepted  ( 16740/ 43285 Acc/Rej)  twiddle  3.06  time 0.193s
+                                     B THREAD   0]  914/2450  25.3% accepted  ( 15208/ 44817 Acc/Rej)  twiddle  3.06  time 0.190s
+                                     B THREAD   0]  930/2450  26.6% accepted  ( 15965/ 44060 Acc/Rej)  twiddle  3.06  time 0.191s
+                                     B THREAD   0]  946/2450  26.9% accepted  ( 16148/ 43877 Acc/Rej)  twiddle  3.17  time 0.192s
+                                     B THREAD   0]  962/2450  25.9% accepted  ( 15552/ 44473 Acc/Rej)  twiddle  3.29  time 0.189s
+                                     B THREAD   0]  978/2450  24.3% accepted  ( 14585/ 45440 Acc/Rej)  twiddle  3.24  time 0.192s
+Computing eigenvalues... [982/2450]
+average store delta 4.6685817298768075
+New twiddle 3.235245
+                                     B THREAD   0]  986/2450  24.9% accepted  ( 14930/ 45095 Acc/Rej)  twiddle  3.24  time 0.182s
+                                     B THREAD   0]  1002/2450  23.4% accepted  ( 14057/ 45968 Acc/Rej)  twiddle  3.51  time 0.183s
+                                     B THREAD   0]  1019/2450  26.6% accepted  ( 15981/ 44044 Acc/Rej)  twiddle  3.51  time 0.194s
+                                     B THREAD   0]  1035/2450  23.1% accepted  ( 13893/ 46132 Acc/Rej)  twiddle  3.44  time 0.190s
+                                     B THREAD   0]  1051/2450  25.6% accepted  ( 15364/ 44661 Acc/Rej)  twiddle  3.39  time 0.189s
+                                     B THREAD   0]  1067/2450  26.7% accepted  ( 16056/ 43969 Acc/Rej)  twiddle  3.31  time 0.197s
+                                     B THREAD   0]  1083/2450  26.8% accepted  ( 16079/ 43946 Acc/Rej)  twiddle  3.31  time 0.198s
+                                     B THREAD   0]  1099/2450  24.9% accepted  ( 14925/ 45100 Acc/Rej)  twiddle  3.31  time 0.185s
+                                     B THREAD   0]  1115/2450  26.7% accepted  ( 16051/ 43974 Acc/Rej)  twiddle  3.23  time 0.191s
+                                     B THREAD   0]  1131/2450  23.9% accepted  ( 14329/ 45696 Acc/Rej)  twiddle  3.31  time 0.184s
+                                     B THREAD   0]  1147/2450  25.1% accepted  ( 15086/ 44939 Acc/Rej)  twiddle  3.31  time 0.191s
+                                     B THREAD   0]  1163/2450  24.1% accepted  ( 14496/ 45529 Acc/Rej)  twiddle  3.31  time 0.185s
+                                     B THREAD   0]  1179/2450  27.1% accepted  ( 16284/ 43741 Acc/Rej)  twiddle  3.14  time 0.198s
+                                     B THREAD   0]  1194/2450  25.1% accepted  ( 15040/ 44985 Acc/Rej)  twiddle  3.14  time 0.198s
+                                     B THREAD   0]  1209/2450  24.9% accepted  ( 14954/ 45071 Acc/Rej)  twiddle  3.29  time 0.188s
+                                     B THREAD   0]  1225/2450  24.5% accepted  ( 14736/ 45289 Acc/Rej)  twiddle  3.49  time 0.189s
+Computing eigenvalues... [1228/2450]
+average store delta 2.0249316616890245
+New twiddle 3.492462
+                                     B THREAD   0]  1233/2450  25.3% accepted  ( 15171/ 44854 Acc/Rej)  twiddle  3.49  time 0.185s
+                                     B THREAD   0]  1249/2450  24.1% accepted  ( 14485/ 45540 Acc/Rej)  twiddle  3.55  time 0.188s
+                                     B THREAD   0]  1265/2450  24.8% accepted  ( 14871/ 45154 Acc/Rej)  twiddle  3.55  time 0.186s
+                                     B THREAD   0]  1281/2450  24.8% accepted  ( 14863/ 45162 Acc/Rej)  twiddle  3.43  time 0.187s
+                                     B THREAD   0]  1297/2450  25.5% accepted  ( 15312/ 44713 Acc/Rej)  twiddle  3.43  time 0.193s
+                                     B THREAD   0]  1313/2450  25.6% accepted  ( 15381/ 44644 Acc/Rej)  twiddle  3.34  time 0.193s
+                                     B THREAD   0]  1329/2450  26.7% accepted  ( 16015/ 44010 Acc/Rej)  twiddle  3.57  time 0.192s
+                                     B THREAD   0]  1345/2450  26.7% accepted  ( 16012/ 44013 Acc/Rej)  twiddle  3.39  time 0.193s
+                                     B THREAD   0]  1361/2450  23.6% accepted  ( 14144/ 45881 Acc/Rej)  twiddle  3.61  time 0.196s
+                                     B THREAD   0]  1376/2450  26.4% accepted  ( 15818/ 44207 Acc/Rej)  twiddle  3.47  time 0.192s
+                                     B THREAD   0]  1392/2450  25.4% accepted  ( 15221/ 44804 Acc/Rej)  twiddle  3.51  time 0.189s
+                                     B THREAD   0]  1408/2450  25.1% accepted  ( 15041/ 44984 Acc/Rej)  twiddle  3.51  time 0.188s
+                                     B THREAD   0]  1424/2450  25.9% accepted  ( 15564/ 44461 Acc/Rej)  twiddle  3.41  time 0.192s
+                                     B THREAD   0]  1440/2450  25.3% accepted  ( 15187/ 44838 Acc/Rej)  twiddle  3.46  time 0.190s
+                                     B THREAD   0]  1456/2450  24.6% accepted  ( 14740/ 45285 Acc/Rej)  twiddle  3.39  time 0.187s
+                                     B THREAD   0]  1472/2450  24.4% accepted  ( 14618/ 45407 Acc/Rej)  twiddle  3.30  time 0.190s
+Computing eigenvalues... [1474/2450]
+average store delta 1.5211698289096016
+New twiddle 3.298679
+                                     B THREAD   0]  1480/2450  29.1% accepted  ( 17485/ 42540 Acc/Rej)  twiddle  3.30  time 0.202s
+                                     B THREAD   0]  1496/2450  25.1% accepted  ( 15043/ 44982 Acc/Rej)  twiddle  3.62  time 0.191s
+                                     B THREAD   0]  1511/2450  25.3% accepted  ( 15181/ 44844 Acc/Rej)  twiddle  3.62  time 0.232s
+                                     B THREAD   0]  1526/2450  24.8% accepted  ( 14864/ 45161 Acc/Rej)  twiddle  3.62  time 0.194s
+                                     B THREAD   0]  1542/2450  23.3% accepted  ( 14002/ 46023 Acc/Rej)  twiddle  3.62  time 0.182s
+                                     B THREAD   0]  1558/2450  24.3% accepted  ( 14609/ 45416 Acc/Rej)  twiddle  3.53  time 0.207s
+                                     B THREAD   0]  1574/2450  23.3% accepted  ( 13965/ 46060 Acc/Rej)  twiddle  3.65  time 0.190s
+                                     B THREAD   0]  1590/2450  25.2% accepted  ( 15098/ 44927 Acc/Rej)  twiddle  3.52  time 0.194s
+                                     B THREAD   0]  1606/2450  24.0% accepted  ( 14417/ 45608 Acc/Rej)  twiddle  3.68  time 0.187s
+                                     B THREAD   0]  1622/2450  25.5% accepted  ( 15314/ 44711 Acc/Rej)  twiddle  3.53  time 0.192s
+                                     B THREAD   0]  1638/2450  24.4% accepted  ( 14657/ 45368 Acc/Rej)  twiddle  3.57  time 0.187s
+                                     B THREAD   0]  1654/2450  25.4% accepted  ( 15240/ 44785 Acc/Rej)  twiddle  3.37  time 0.189s
+                                     B THREAD   0]  1670/2450  25.8% accepted  ( 15501/ 44524 Acc/Rej)  twiddle  3.32  time 0.196s
+                                     B THREAD   0]  1686/2450  27.8% accepted  ( 16692/ 43333 Acc/Rej)  twiddle  3.32  time 0.203s
+                                     B THREAD   0]  1701/2450  27.5% accepted  ( 16525/ 43500 Acc/Rej)  twiddle  3.30  time 0.201s
+                                     B THREAD   0]  1717/2450  24.8% accepted  ( 14900/ 45125 Acc/Rej)  twiddle  3.30  time 0.190s
+Computing eigenvalues... [1720/2450]
+average store delta 1.4778368769626051
+New twiddle 3.295392
+                                     B THREAD   0]  1725/2450  24.0% accepted  ( 14383/ 45642 Acc/Rej)  twiddle  3.54  time 0.186s
+                                     B THREAD   0]  1741/2450  25.4% accepted  ( 15243/ 44782 Acc/Rej)  twiddle  3.50  time 0.191s
+                                     B THREAD   0]  1757/2450  26.8% accepted  ( 16094/ 43931 Acc/Rej)  twiddle  3.69  time 0.194s
+                                     B THREAD   0]  1773/2450  23.2% accepted  ( 13954/ 46071 Acc/Rej)  twiddle  3.76  time 0.185s
+                                     B THREAD   0]  1789/2450  24.7% accepted  ( 14845/ 45180 Acc/Rej)  twiddle  3.62  time 0.186s
+                                     B THREAD   0]  1805/2450  23.2% accepted  ( 13910/ 46115 Acc/Rej)  twiddle  3.62  time 0.183s
+                                     B THREAD   0]  1821/2450  23.3% accepted  ( 13980/ 46045 Acc/Rej)  twiddle  3.75  time 0.183s
+                                     B THREAD   0]  1838/2450  26.7% accepted  ( 16029/ 43996 Acc/Rej)  twiddle  3.57  time 0.190s
+                                     B THREAD   0]  1854/2450  23.5% accepted  ( 14104/ 45921 Acc/Rej)  twiddle  3.57  time 0.182s
+                                     B THREAD   0]  1870/2450  24.2% accepted  ( 14506/ 45519 Acc/Rej)  twiddle  3.57  time 0.186s
+                                     B THREAD   0]  1886/2450  24.6% accepted  ( 14763/ 45262 Acc/Rej)  twiddle  3.57  time 0.186s
+                                     B THREAD   0]  1902/2450  25.8% accepted  ( 15488/ 44537 Acc/Rej)  twiddle  3.52  time 0.191s
+                                     B THREAD   0]  1918/2450  26.8% accepted  ( 16098/ 43927 Acc/Rej)  twiddle  3.52  time 0.190s
+                                     B THREAD   0]  1934/2450  26.2% accepted  ( 15752/ 44273 Acc/Rej)  twiddle  3.52  time 0.190s
+                                     B THREAD   0]  1950/2450  25.8% accepted  ( 15479/ 44546 Acc/Rej)  twiddle  3.52  time 0.188s
+Computing eigenvalues... [1966/2450]
+average store delta 1.1476821730954174
+New twiddle 3.521061
+                                     B THREAD   0]  1966/2450  26.5% accepted  ( 15908/ 44117 Acc/Rej)  twiddle  3.52  time 0.196s
+                                     B THREAD   0]  1983/2450  26.4% accepted  ( 15845/ 44180 Acc/Rej)  twiddle  3.52  time 0.188s
+                                     B THREAD   0]  1999/2450  25.4% accepted  ( 15230/ 44795 Acc/Rej)  twiddle  3.81  time 0.189s
+                                     B THREAD   0]  2016/2450  25.4% accepted  ( 15272/ 44753 Acc/Rej)  twiddle  3.70  time 0.185s
+                                     B THREAD   0]  2033/2450  24.1% accepted  ( 14485/ 45540 Acc/Rej)  twiddle  3.79  time 0.181s
+                                     B THREAD   0]  2049/2450  27.0% accepted  ( 16228/ 43797 Acc/Rej)  twiddle  3.39  time 0.195s
+                                     B THREAD   0]  2065/2450  23.9% accepted  ( 14350/ 45675 Acc/Rej)  twiddle  3.51  time 0.180s
+                                     B THREAD   0]  2081/2450  24.3% accepted  ( 14575/ 45450 Acc/Rej)  twiddle  3.58  time 0.185s
+                                     B THREAD   0]  2097/2450  25.0% accepted  ( 15024/ 45001 Acc/Rej)  twiddle  3.63  time 0.186s
+                                     B THREAD   0]  2113/2450  23.8% accepted  ( 14299/ 45726 Acc/Rej)  twiddle  3.43  time 0.184s
+                                     B THREAD   0]  2129/2450  23.9% accepted  ( 14359/ 45666 Acc/Rej)  twiddle  3.59  time 0.184s
+                                     B THREAD   0]  2145/2450  25.7% accepted  ( 15428/ 44597 Acc/Rej)  twiddle  3.55  time 0.189s
+                                     B THREAD   0]  2162/2450  26.6% accepted  ( 15962/ 44063 Acc/Rej)  twiddle  3.55  time 0.187s
+                                     B THREAD   0]  2178/2450  26.2% accepted  ( 15725/ 44300 Acc/Rej)  twiddle  3.47  time 0.189s
+                                     B THREAD   0]  2194/2450  26.6% accepted  ( 15986/ 44039 Acc/Rej)  twiddle  3.47  time 0.189s
+                                     B THREAD   0]  2210/2450  24.5% accepted  ( 14714/ 45311 Acc/Rej)  twiddle  3.47  time 0.183s
+Computing eigenvalues... [2212/2450]
+average store delta 0.4680701809906726
+New twiddle 3.465511
+                                     B THREAD   0]  2218/2450  25.5% accepted  ( 15311/ 44714 Acc/Rej)  twiddle  3.47  time 0.185s
+                                     B THREAD   0]  2234/2450  26.8% accepted  ( 16078/ 43947 Acc/Rej)  twiddle  3.47  time 0.192s
+                                     B THREAD   0]  2250/2450  25.3% accepted  ( 15203/ 44822 Acc/Rej)  twiddle  3.59  time 0.183s
+                                     B THREAD   0]  2266/2450  22.1% accepted  ( 13249/ 46776 Acc/Rej)  twiddle  3.85  time 0.176s
+                                     B THREAD   0]  2283/2450  25.2% accepted  ( 15104/ 44921 Acc/Rej)  twiddle  3.85  time 0.186s
+                                     B THREAD   0]  2300/2450  26.0% accepted  ( 15624/ 44401 Acc/Rej)  twiddle  3.59  time 0.190s
+                                     B THREAD   0]  2316/2450  27.1% accepted  ( 16242/ 43783 Acc/Rej)  twiddle  3.56  time 0.191s
+                                     B THREAD   0]  2332/2450  26.0% accepted  ( 15607/ 44418 Acc/Rej)  twiddle  3.56  time 0.227s
+                                     B THREAD   0]  2348/2450  26.8% accepted  ( 16076/ 43949 Acc/Rej)  twiddle  3.56  time 0.188s
+                                     B THREAD   0]  2364/2450  24.7% accepted  ( 14845/ 45180 Acc/Rej)  twiddle  3.80  time 0.185s
+                                     B THREAD   0]  2381/2450  23.4% accepted  ( 14033/ 45992 Acc/Rej)  twiddle  3.73  time 0.182s
+                                     B THREAD   0]  2398/2450  22.9% accepted  ( 13738/ 46287 Acc/Rej)  twiddle  3.77  time 0.177s
+                                     B THREAD   0]  2414/2450  24.1% accepted  ( 14452/ 45573 Acc/Rej)  twiddle  3.67  time 0.181s
+                                     B THREAD   0]  2430/2450  24.8% accepted  ( 14909/ 45116 Acc/Rej)  twiddle  3.67  time 0.186s
+                                     B THREAD   0]  2446/2450  24.2% accepted  ( 14547/ 45478 Acc/Rej)  twiddle  3.71  time 0.182s
+Computing eigenvalues... [2450/2450]
+average store delta 0.3989970876674895
+New twiddle 3.706488
+                                       STARTING rwalk THREAD 0 [this thread makes 200 models]
+199 models left to generate
+Model 1/200 complete.
+198 models left to generate
+Model 2/200 complete.
+197 models left to generate
+Model 3/200 complete.
+196 models left to generate
+Model 4/200 complete.
+195 models left to generate
+Model 5/200 complete.
+194 models left to generate
+Model 6/200 complete.
+193 models left to generate
+Model 7/200 complete.
+192 models left to generate
+Model 8/200 complete.
+191 models left to generate
+                                       THREAD   0  16  24.2% accepted  ( 14503/ 45522 Acc/Rej)  twiddle  3.71  time 0.176s  184 left.
+Model 9/200 complete.
+190 models left to generate
+Model 10/200 complete.
+189 models left to generate
+Model 11/200 complete.
+188 models left to generate
+Model 12/200 complete.
+187 models left to generate
+Model 13/200 complete.
+186 models left to generate
+Model 14/200 complete.
+185 models left to generate
+Model 15/200 complete.
+184 models left to generate
+Model 16/200 complete.
+183 models left to generate
+                                       THREAD   0  33  26.0% accepted  ( 15613/ 44412 Acc/Rej)  twiddle  3.71  time 0.182s  167 left.
+Model 17/200 complete.
+182 models left to generate
+Model 18/200 complete.
+181 models left to generate
+Model 19/200 complete.
+180 models left to generate
+Model 20/200 complete.
+179 models left to generate
+Model 21/200 complete.
+178 models left to generate
+Model 22/200 complete.
+177 models left to generate
+Model 23/200 complete.
+176 models left to generate
+Model 24/200 complete.
+                                       THREAD   0  50  25.7% accepted  ( 15399/ 44626 Acc/Rej)  twiddle  3.71  time 0.184s  150 left.
+175 models left to generate
+Model 25/200 complete.
+174 models left to generate
+Model 26/200 complete.
+173 models left to generate
+Model 27/200 complete.
+172 models left to generate
+Model 28/200 complete.
+171 models left to generate
+Model 29/200 complete.
+170 models left to generate
+Model 30/200 complete.
+169 models left to generate
+Model 31/200 complete.
+168 models left to generate
+                                       THREAD   0  67  24.2% accepted  ( 14536/ 45489 Acc/Rej)  twiddle  3.71  time 0.180s  133 left.
+Model 32/200 complete.
+167 models left to generate
+Model 33/200 complete.
+166 models left to generate
+Model 34/200 complete.
+165 models left to generate
+Model 35/200 complete.
+164 models left to generate
+Model 36/200 complete.
+163 models left to generate
+Model 37/200 complete.
+162 models left to generate
+Model 38/200 complete.
+161 models left to generate
+Model 39/200 complete.
+                                       THREAD   0  82  25.5% accepted  ( 15320/ 44705 Acc/Rej)  twiddle  3.71  time 0.189s  118 left.
+160 models left to generate
+Model 40/200 complete.
+159 models left to generate
+Model 41/200 complete.
+158 models left to generate
+Model 42/200 complete.
+157 models left to generate
+Model 43/200 complete.
+156 models left to generate
+Model 44/200 complete.
+155 models left to generate
+Model 45/200 complete.
+154 models left to generate
+Model 46/200 complete.
+153 models left to generate
+Model 47/200 complete.
+152 models left to generate
+Model 48/200 complete.
+                                       THREAD   0  95  25.3% accepted  ( 15212/ 44813 Acc/Rej)  twiddle  3.71  time 0.181s  105 left.
+151 models left to generate
+Model 49/200 complete.
+150 models left to generate
+Model 50/200 complete.
+149 models left to generate
+Model 51/200 complete.
+148 models left to generate
+Model 52/200 complete.
+147 models left to generate
+Model 53/200 complete.
+146 models left to generate
+Model 54/200 complete.
+145 models left to generate
+Model 55/200 complete.
+144 models left to generate
+Model 56/200 complete.
+                                       THREAD   0  111  23.8% accepted  ( 14267/ 45758 Acc/Rej)  twiddle  3.71  time 0.235s  89 left.
+143 models left to generate
+Model 57/200 complete.
+142 models left to generate
+Model 58/200 complete.
+141 models left to generate
+Model 59/200 complete.
+140 models left to generate
+Model 60/200 complete.
+139 models left to generate
+Model 61/200 complete.
+138 models left to generate
+Model 62/200 complete.
+137 models left to generate
+Model 63/200 complete.
+136 models left to generate
+                                       THREAD   0  127  23.8% accepted  ( 14302/ 45723 Acc/Rej)  twiddle  3.71  time 0.178s  73 left.
+Model 64/200 complete.
+135 models left to generate
+Model 65/200 complete.
+134 models left to generate
+Model 66/200 complete.
+133 models left to generate
+Model 67/200 complete.
+132 models left to generate
+Model 68/200 complete.
+131 models left to generate
+Model 69/200 complete.
+130 models left to generate
+Model 70/200 complete.
+129 models left to generate
+Model 71/200 complete.
+128 models left to generate
+Model 72/200 complete.
+127 models left to generate
+Model 73/200 complete.
+126 models left to generate
+Model 74/200 complete.
+125 models left to generate
+Model 75/200 complete.
+                                       THREAD   0  143  26.0% accepted  ( 15608/ 44417 Acc/Rej)  twiddle  3.71  time 0.182s  57 left.
+124 models left to generate
+Model 76/200 complete.
+123 models left to generate
+Model 77/200 complete.
+122 models left to generate
+Model 78/200 complete.
+121 models left to generate
+Model 79/200 complete.
+120 models left to generate
+Model 80/200 complete.
+119 models left to generate
+Model 81/200 complete.
+118 models left to generate
+Model 82/200 complete.
+117 models left to generate
+Model 83/200 complete.
+116 models left to generate
+Model 84/200 complete.
+                                       THREAD   0  159  24.3% accepted  ( 14608/ 45417 Acc/Rej)  twiddle  3.71  time 0.175s  41 left.
+115 models left to generate
+Model 85/200 complete.
+114 models left to generate
+Model 86/200 complete.
+113 models left to generate
+Model 87/200 complete.
+112 models left to generate
+Model 88/200 complete.
+111 models left to generate
+Model 89/200 complete.
+110 models left to generate
+Model 90/200 complete.
+109 models left to generate
+Model 91/200 complete.
+108 models left to generate
+Model 92/200 complete.
+107 models left to generate
+Model 93/200 complete.
+106 models left to generate
+                                       THREAD   0  173  25.4% accepted  ( 15224/ 44801 Acc/Rej)  twiddle  3.71  time 0.237s  27 left.
+Model 94/200 complete.
+105 models left to generate
+Model 95/200 complete.
+104 models left to generate
+Model 96/200 complete.
+103 models left to generate
+Model 97/200 complete.
+102 models left to generate
+Model 98/200 complete.
+101 models left to generate
+Model 99/200 complete.
+100 models left to generate
+Model 100/200 complete.
+99 models left to generate
+Model 101/200 complete.
+98 models left to generate
+Model 102/200 complete.
+97 models left to generate
+Model 103/200 complete.
+96 models left to generate
+                                       THREAD   0  187  24.6% accepted  ( 14748/ 45277 Acc/Rej)  twiddle  3.71  time 0.179s  13 left.
+Model 104/200 complete.
+95 models left to generate
+Model 105/200 complete.
+94 models left to generate
+Model 106/200 complete.
+93 models left to generate
+Model 107/200 complete.
+92 models left to generate
+Model 108/200 complete.
+91 models left to generate
+Model 109/200 complete.
+90 models left to generate
+Model 110/200 complete.
+89 models left to generate
+Model 111/200 complete.
+88 models left to generate
+Model 112/200 complete.
+87 models left to generate
+Model 113/200 complete.
+86 models left to generate
+Model 114/200 complete.
+85 models left to generate
+Model 115/200 complete.
+84 models left to generate
+Model 116/200 complete.
+83 models left to generate
+Model 117/200 complete.
+82 models left to generate
+Model 118/200 complete.
+81 models left to generate
+Model 119/200 complete.
+80 models left to generate
+Model 120/200 complete.
+79 models left to generate
+Model 121/200 complete.
+78 models left to generate
+Model 122/200 complete.
+77 models left to generate
+Model 123/200 complete.
+76 models left to generate
+Model 124/200 complete.
+75 models left to generate
+Model 125/200 complete.
+74 models left to generate
+Model 126/200 complete.
+73 models left to generate
+Model 127/200 complete.
+72 models left to generate
+Model 128/200 complete.
+71 models left to generate
+Model 129/200 complete.
+70 models left to generate
+Model 130/200 complete.
+69 models left to generate
+Model 131/200 complete.
+68 models left to generate
+Model 132/200 complete.
+67 models left to generate
+Model 133/200 complete.
+66 models left to generate
+Model 134/200 complete.
+65 models left to generate
+Model 135/200 complete.
+64 models left to generate
+Model 136/200 complete.
+63 models left to generate
+Model 137/200 complete.
+62 models left to generate
+Model 138/200 complete.
+61 models left to generate
+Model 139/200 complete.
+60 models left to generate
+Model 140/200 complete.
+59 models left to generate
+Model 141/200 complete.
+58 models left to generate
+Model 142/200 complete.
+57 models left to generate
+Model 143/200 complete.
+56 models left to generate
+Model 144/200 complete.
+55 models left to generate
+Model 145/200 complete.
+54 models left to generate
+Model 146/200 complete.
+53 models left to generate
+Model 147/200 complete.
+52 models left to generate
+Model 148/200 complete.
+51 models left to generate
+Model 149/200 complete.
+50 models left to generate
+Model 150/200 complete.
+49 models left to generate
+Model 151/200 complete.
+48 models left to generate
+Model 152/200 complete.
+47 models left to generate
+Model 153/200 complete.
+46 models left to generate
+Model 154/200 complete.
+45 models left to generate
+Model 155/200 complete.
+44 models left to generate
+Model 156/200 complete.
+43 models left to generate
+Model 157/200 complete.
+42 models left to generate
+Model 158/200 complete.
+41 models left to generate
+Model 159/200 complete.
+40 models left to generate
+Model 160/200 complete.
+39 models left to generate
+Model 161/200 complete.
+38 models left to generate
+Model 162/200 complete.
+37 models left to generate
+Model 163/200 complete.
+36 models left to generate
+Model 164/200 complete.
+35 models left to generate
+Model 165/200 complete.
+34 models left to generate
+Model 166/200 complete.
+33 models left to generate
+Model 167/200 complete.
+32 models left to generate
+Model 168/200 complete.
+31 models left to generate
+Model 169/200 complete.
+30 models left to generate
+Model 170/200 complete.
+29 models left to generate
+Model 171/200 complete.
+28 models left to generate
+Model 172/200 complete.
+27 models left to generate
+Model 173/200 complete.
+26 models left to generate
+Model 174/200 complete.
+25 models left to generate
+Model 175/200 complete.
+24 models left to generate
+Model 176/200 complete.
+23 models left to generate
+Model 177/200 complete.
+22 models left to generate
+Model 178/200 complete.
+21 models left to generate
+Model 179/200 complete.
+20 models left to generate
+Model 180/200 complete.
+19 models left to generate
+Model 181/200 complete.
+18 models left to generate
+Model 182/200 complete.
+17 models left to generate
+Model 183/200 complete.
+16 models left to generate
+Model 184/200 complete.
+15 models left to generate
+Model 185/200 complete.
+14 models left to generate
+Model 186/200 complete.
+13 models left to generate
+Model 187/200 complete.
+12 models left to generate
+Model 188/200 complete.
+11 models left to generate
+Model 189/200 complete.
+10 models left to generate
+Model 190/200 complete.
+9 models left to generate
+Model 191/200 complete.
+8 models left to generate
+Model 192/200 complete.
+7 models left to generate
+Model 193/200 complete.
+6 models left to generate
+Model 194/200 complete.
+5 models left to generate
+Model 195/200 complete.
+4 models left to generate
+Model 196/200 complete.
+3 models left to generate
+Model 197/200 complete.
+2 models left to generate
+Model 198/200 complete.
+1 models left to generate
+Model 199/200 complete.
+0 models left to generate
+Model 200/200 complete.
+--------------------------------------------------------------------------------
+SAMPLEX TIMINGS
+--------------------------------------------------------------------------------
+Initial inner point    0.73s
+Estimate eigenvectors  1.37s
+Burn-in                487.52s
+Modeling               42.32s
+Max/Avg thread time    39.93s 39.93s
+Total wall-clock time  532.02s
+--------------------------------------------------------------------------------
+Generated 200 model(s).
+Post processed 200 model(s), 0 had post processing functions applied.
+Saving state to /Users/phdenzel/gleam/data/SW05/sw05.state

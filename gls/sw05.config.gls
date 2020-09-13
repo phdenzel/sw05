@@ -1,0 +1,41 @@
+glass_basis('glass.basis.pixels', solver='rwalk')
+meta(author='phdenzel', notes='gleam')
+setup_log('/Users/phdenzel/gleam/data/SW05/sw05.log.txt')
+samplex_random_seed(0)
+samplex_acceptance(rate=0.25, tol=0.15)
+exclude_all_priors()
+include_prior(
+  'lens_eq',
+  'time_delay',
+  'profile_steepness',
+  'J3gradient',
+  'magnification',
+  'hubble_constant',
+  'PLsmoothness3',
+  'shared_h',
+  'external_shear',
+)
+hubble_time(13.700000)
+globject('SW05')
+zlens(0.62525)
+pixrad(12)
+steepness(0,None)
+smooth(2.00,include_central_pixel=False)
+local_gradient(45.00)
+symm()
+
+shear(0.16)
+
+hires(1, 3)
+A = 1.347, 5.290
+B = -4.249, -2.300
+C = -4.680, -0.238
+D = 2.472, -2.252
+
+source(2.6,
+  A, 'min', 
+  B, 'min', None,
+  C, 'sad', None,
+  D, 'sad', None)
+model(200)
+savestate('/Users/phdenzel/gleam/data/SW05/sw05.state')
